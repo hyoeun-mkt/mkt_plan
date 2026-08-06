@@ -33,6 +33,12 @@
     ul{margin:7px 0 0;padding-left:22px}
     li::marker{color:var(--blue);font-weight:800}
     .panel{padding:18px 21px;border:1px solid var(--line);border-radius:12px;background:#fbfcfd}
+    strong,.em{color:var(--navy);font-weight:850}
+    .underline-key{text-decoration-line:underline;text-decoration-color:#18324a;text-decoration-thickness:2px;text-underline-offset:4px;text-decoration-skip-ink:none}
+    .key-line::marker{color:var(--blue)}
+    .decision-line{font-weight:750;color:#173d5d}
+    .decision-line::marker{color:var(--blue)}
+    .review-panel{background:#fff}
     .note{margin:15px 0 0;padding:12px 15px;border-radius:8px;background:#f5f7f9;color:#4e5d69;font-size:13.5px}
     .flow-wrap{margin:24px 0 30px;padding:23px;border:1px solid #cbd9e5;border-radius:14px;background:linear-gradient(135deg,#f8fbfe,#eef5fa)}
     .flow-title{margin:0 0 16px;color:var(--navy);font-size:15px;font-weight:800}
@@ -82,23 +88,23 @@
     </header>
     <div class="content">
       <section><h2><span class="no">1</span>추진 목적</h2><ol>
-        <li>게임별 거래 변화를 신속하게 파악하여 구매자 모객 대상 게임과 마케팅 추진 우선순위를 선정할 수 있는 데이터 기반 마련</li>
-        <li>반복적으로 진행되는 거래 데이터 취합·가공·비교 업무를 자동화하여 거래분석 업무의 효율성 향상</li>
-        <li>거래분석 결과를 CRM, 콘텐츠, SEO, SNS, 바이럴, 광고, 프로모션 등 구매자 모객 활동에 활용할 수 있는 운영체계 구축</li>
+        <li class="key-line"><strong>게임별 거래 변화를 신속하게 파악</strong>하여 구매자 모객 대상 게임과 <strong>마케팅 추진 우선순위</strong>를 선정할 수 있는 데이터 기반 마련</li>
+        <li><strong>거래 데이터 취합·가공·비교 업무 자동화</strong>를 통한 거래분석 업무의 효율성 향상</li>
+        <li>거래분석 결과를 CRM, 콘텐츠, SEO, SNS, 바이럴, 광고, 프로모션 등 <strong>구매자 모객 활동에 활용할 수 있는 운영체계 구축</strong></li>
       </ol></section>
       <section><h2><span class="no">2</span>추진 배경</h2><ol>
-        <li>현재 거래금액 및 주요 거래 현황은 주간·월간 보고를 통해 지속적으로 관리하고 있으며, 게임별 거래 현황도 확인 가능한 상태임</li>
-        <li>다만 전체 거래지표의 증감만으로는 거래 변화의 실질적인 원인을 파악하기 어려우므로 게임별 거래 변화와 전체 거래 증감에 미치는 영향을 함께 분석할 필요가 있음</li>
-        <li>거래 변동이 발생할 경우 게임별 거래금액, 거래건수, 구매자 수 등 관련 데이터를 추가로 추출하고 기간별로 비교·분석하는 수작업이 반복적으로 발생하고 있음</li>
-        <li>데이터 추출 및 분석에 시간이 소요됨에 따라 거래 변화의 원인 파악과 마케팅 실행 여부 검토가 신속하게 이루어지기 어려운 상황임</li>
-        <li>이에 거래분석에 필요한 데이터를 자동으로 집계·가공·분석하여 게임별 거래 변화를 신속하게 확인하고, 구매자 모객 전략 수립과 마케팅 의사결정을 지원하는 체계를 구축하고자 함</li>
+        <li><span class="underline-key">현재 거래금액 및 주요 거래 현황은</span> 주간·월간 보고를 통해 지속적으로 관리하고 있으며, 게임별 거래 현황도 <span class="underline-key">확인 가능한 상태</span>임</li>
+        <li class="key-line">다만 <strong>전체 거래지표의 증감만으로는 거래 변화의 실질적인 원인 파악이 어려우므로</strong> 게임별 거래 변화와 전체 거래 증감에 미치는 영향을 함께 분석할 필요가 있음</li>
+        <li><span class="underline-key">거래 변동이 발생할 경우</span> 게임별 거래금액, 거래건수, 구매자 수 등 관련 데이터를 <span class="underline-key">추가로 추출하고 기간별로 비교·분석하는 수작업이 반복적으로 발생</span>하고 있음</li>
+        <li><strong>데이터 추출 및 분석에 시간이 소요</strong>됨에 따라 거래 변화의 원인 파악과 마케팅 실행 여부 검토가 신속하게 이루어지기 어려운 상황임</li>
+        <li class="key-line">이에 거래분석에 필요한 데이터를 <strong>자동으로 집계·가공·분석</strong>하여 게임별 거래 변화를 신속하게 확인하고, <strong>구매자 모객 전략 수립과 마케팅 의사결정을 지원하는 체계</strong>를 구축하고자 함</li>
       </ol></section>
       <section><h2><span class="no">3</span>추진 내용</h2>
         <h3>3-1. 거래분석 자동화 구축</h3><div class="panel"><ol>
-          <li>운영 시스템의 거래 데이터를 자동으로 연계하여 일자별·게임별 분석 데이터가 지속적으로 누적되도록 구성</li>
+          <li class="key-line"><strong>운영 시스템의 거래 데이터를 자동 연계</strong>하여 일자별·게임별 분석 데이터가 <strong>지속적으로 누적</strong>되도록 구성</li>
           <li>반영된 데이터를 기준으로 날짜, 게임명, 거래건수, 거래금액 등 주요 항목을 자동 정리하고 기간별 비교가 가능한 형태로 가공</li>
-          <li>가공된 데이터를 바탕으로 전일·전주·전월 대비 증감률, 게임별 거래 비중 및 전체 거래 증감 기여도 등 주요 분석 지표 자동 산출</li>
-          <li>분석 결과를 대시보드 또는 정기 보고서 형태로 제공하여 게임별 거래 현황과 주요 변동 사항을 한 화면에서 확인할 수 있도록 구성</li>
+          <li>가공된 데이터를 바탕으로 <strong>전일·전주·전월 대비 증감률, 게임별 거래 비중 및 전체 거래 증감 기여도</strong> 등 주요 분석 지표 자동 산출</li>
+          <li>분석 결과를 <strong>대시보드 또는 정기 보고서</strong> 형태로 제공하여 게임별 거래 현황과 주요 변동 사항을 한 화면에서 확인할 수 있도록 구성</li>
           <li>운영 데이터 연계 방식, 데이터 적재 구조 및 세부 기술 구현 방식은 현재 시스템 환경과 개발 가능 범위를 기준으로 개발부서에서 검토</li>
         </ol></div>
         <div class="flow-wrap"><p class="flow-title">자동화 프로세스</p><span class="flow-label">자동화 영역</span><div class="flow">
@@ -109,9 +115,9 @@
           <div class="card"><h4>주요 분석 항목</h4><ul><li>게임별 거래건수</li><li>게임별 거래금액</li><li>게임별 평균 거래단가</li><li>게임별 일평균 거래금액 및 거래건수</li><li>전체 거래 중 게임별 거래 비중</li><li>전일·전주·전월 대비 증감률</li><li>전체 거래 증감에 대한 게임별 기여도</li><li>거래 증가·감소 게임 순위</li><li>신규 진입 및 거래 급증 게임</li><li>일정 기간 연속 상승·하락 게임</li></ul></div>
           <div class="card"><h4>추가 연계 검토 항목</h4><ul><li>게임별 구매자 수</li><li>신규 구매자 수</li><li>재구매자 수</li><li>판매자 수</li><li>등록 매물 수</li><li>서버별 거래 현황</li><li>유입 및 전환 데이터</li><li>CRM 발송 및 마케팅 성과 데이터</li></ul></div>
         </div><p class="note">※ 적용 대상 데이터와 분석 항목은 활용 가능 여부 및 개발 범위를 검토하여 단계적으로 확대</p>
-        <h3>3-3. 주요 거래 변동 확인</h3><div class="panel"><ol><li>게임별 거래 증감과 주요 변동 사항을 자동으로 확인할 수 있도록 구성</li><li>주요 확인 항목<ul><li>전주 또는 전월 대비 거래금액 급증·급감 게임</li><li>거래금액 또는 거래건수의 연속 상승·하락 게임</li><li>전체 거래 증감에 대한 영향이 큰 게임</li><li>특정 게임의 거래 비중 증가·감소</li><li>신규 출시 또는 업데이트 이후 거래량이 증가한 게임</li></ul></li><li>주요 변동이 확인된 게임은 거래 변화의 원인과 구매자 모객 필요성을 검토할 수 있도록 분석 대상 게임으로 분류하며, 해당 결과는 게임별 CRM 운영에도 활용</li></ol></div>
+        <h3>3-3. 주요 거래 변동 확인</h3><div class="panel"><ol><li><strong>게임별 거래 증감과 주요 변동 사항을 자동 확인</strong>할 수 있도록 구성</li><li>주요 확인 항목<ul><li>전주 또는 전월 대비 <strong>거래금액 급증·급감 게임</strong></li><li>거래금액 또는 거래건수의 <strong>연속 상승·하락 게임</strong></li><li><strong>전체 거래 증감에 대한 영향이 큰 게임</strong></li><li>특정 게임의 거래 비중 증가·감소</li><li>신규 출시 또는 업데이트 이후 거래량이 증가한 게임</li></ul></li><li class="key-line">주요 변동이 확인된 게임은 거래 변화의 원인과 구매자 모객 필요성을 검토할 수 있도록 <strong>분석 대상 게임으로 분류</strong>하며, 해당 결과는 <strong>게임별 CRM 운영에도 활용</strong></li></ol></div>
         <p class="note">※ 거래 급증·급감 등 세부 판단 기준은 과거 데이터 분석 및 운영 결과를 바탕으로 설정</p>
-        <h3>3-4. 구매자 모객 전략 활용</h3><div class="panel"><ol><li>거래분석 결과를 바탕으로 구매자 모객이 필요한 게임과 성장 가능성이 높은 게임을 구분하여 마케팅 우선순위 선정</li><li>게임별 거래 상황에 따른 마케팅 실행 방향 검토<ul><li><strong>거래 성장 게임:</strong> SEO, 콘텐츠, 광고, 제휴 등을 통한 외부 구매자 유입 확대</li><li><strong>거래 감소 게임:</strong> CRM, 복귀 콘텐츠, 프로모션 등을 통한 기존 구매자 재활성화</li><li><strong>신규·업데이트 게임:</strong> 초기 거래 추세를 바탕으로 콘텐츠 및 프로모션 추진 여부 검토</li><li><strong>특정 게임 거래 의존도 증가:</strong> 추가 성장 게임 발굴을 통한 거래 포트폴리오 분산</li><li><strong>거래 기반이 부족한 게임:</strong> 구매자 모객 전 등록 매물 및 판매자 공급 현황 우선 검토</li></ul></li><li>마케팅 실행 전후의 거래 변화를 비교하여 구매자 모객 활동의 성과 확인</li></ol></div>
+        <h3>3-4. 구매자 모객 전략 활용</h3><div class="panel"><ol><li class="key-line">거래분석 결과를 바탕으로 구매자 모객이 필요한 게임과 성장 가능성이 높은 게임을 구분하여 <strong>마케팅 우선순위 선정</strong></li><li>게임별 거래 상황에 따른 마케팅 실행 방향 검토<ul><li><strong>거래 성장 게임:</strong> SEO, 콘텐츠, 광고, 제휴 등을 통한 외부 구매자 유입 확대</li><li><strong>거래 감소 게임:</strong> CRM, 복귀 콘텐츠, 프로모션 등을 통한 기존 구매자 재활성화</li><li><strong>신규·업데이트 게임:</strong> 초기 거래 추세를 바탕으로 콘텐츠 및 프로모션 추진 여부 검토</li><li><strong>특정 게임 거래 의존도 증가:</strong> 추가 성장 게임 발굴을 통한 거래 포트폴리오 분산</li><li><strong>거래 기반이 부족한 게임:</strong> 구매자 모객 전 등록 매물 및 판매자 공급 현황 우선 검토</li></ul></li><li><strong>마케팅 실행 전후의 거래 변화</strong>를 비교하여 구매자 모객 활동의 <strong>성과 확인</strong></li></ol></div>
       </section>
       <section><h2><span class="no">4</span>단계별 추진 방향</h2><div class="stages">
         <div class="stage"><span class="tag">STEP 01</span><h3>게임별 거래분석 자동화</h3><ul><li>활용 가능한 거래 데이터 및 항목 확인</li><li>데이터 반영 방식과 기준 형식 수립</li><li>데이터 자동 정리 및 기간별 비교</li><li>게임별 거래 증감률과 기여도 자동 산출</li><li>대시보드 또는 정기 보고서 구축</li></ul></div>
@@ -121,7 +127,7 @@
       <section><h2><span class="no">5</span>기대 효과</h2><div class="benefits">
         <div class="benefit">반복적인 거래 데이터 취합·가공·비교 업무 효율화</div><div class="benefit">전체 거래 변동에 영향을 미치는 주요 게임의 신속한 확인</div><div class="benefit">게임별 거래 성장 및 감소 추세의 지속적인 관리</div><div class="benefit">구매자 모객이 필요한 게임과 성장 가능성이 높은 게임의 조기 발굴</div><div class="benefit">거래 데이터를 기반으로 한 마케팅 대상 및 우선순위 선정</div><div class="benefit">CRM, 콘텐츠, SEO, SNS, 바이럴, 광고, 프로모션 등 게임별 마케팅 실행 지원</div><div class="benefit">마케팅 실행 전후의 거래 변화 비교를 통한 성과 관리 기반 마련</div><div class="benefit">구매자 모객 전략의 지속적인 개선 및 고도화</div>
       </div></section>
-      <section><h2><span class="no">6</span>검토 요청사항</h2><div class="panel"><ol><li>게임별 거래분석 자동화 구축 추진 여부</li><li>활용 가능한 거래 데이터 및 추가 연계 데이터 검토</li><li>1차 구축 대상 데이터와 분석 지표 협의</li><li>데이터 반영 및 자동화 방식 검토</li><li>대시보드 또는 정기 보고서 구축 방식 검토</li><li>데이터 갱신 주기 및 주요 거래 변동 기준 협의</li><li>단계별 개발 범위 및 추진 일정 검토</li></ol></div></section>
+      <section><h2><span class="no">6</span>검토 요청사항</h2><div class="panel review-panel"><ol><li class="decision-line">게임별 거래분석 자동화 구축 추진 여부</li><li>활용 가능한 거래 데이터 및 추가 연계 데이터 검토</li><li class="decision-line">1차 구축 대상 데이터와 분석 지표 협의</li><li>데이터 반영 및 자동화 방식 검토</li><li>대시보드 또는 정기 보고서 구축 방식 검토</li><li>데이터 갱신 주기 및 주요 거래 변동 기준 협의</li><li class="decision-line">단계별 개발 범위 및 추진 일정 검토</li></ol></div></section>
     </div>
     <footer>마케팅팀 · 이효은</footer>
   </main>
